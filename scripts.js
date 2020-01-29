@@ -1,6 +1,6 @@
-// create Show class - contains title imgUrl artist and rating
+// create Artist class - contains name url and listener count
 // API call to data.json on window load
-// parse data and organize with Show class
+// parse data and organize with Artist class
 // populate template information with info from first show
 // iterate over shows
 // copy previous divs and repopulate
