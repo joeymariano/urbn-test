@@ -15,7 +15,7 @@ class Artist {
 
 window.onload = function() {
     // api call
-    fetch(`https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=spain&api_key=8834627c4bb1245c48a7f26707e73ebd&format=json`)
+    fetch(`https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=United+States&api_key=8834627c4bb1245c48a7f26707e73ebd&format=json`)
         .then((response) => {
             return response.json()
         })
