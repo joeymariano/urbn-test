@@ -1,0 +1,23 @@
+{
+  "name": "urbn-test",
+  "version": "1.0.0",
+  "description": "- `npm i http-server` - `npx http-server` - `navigate to localhost:8080`",
+  "main": "scripts.js",
+  "dependencies": {
+    "http-server": "^0.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeymariano/urbn-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joeymariano/urbn-test/issues"
+  },
+  "homepage": "https://github.com/joeymariano/urbn-test#readme"
+}
