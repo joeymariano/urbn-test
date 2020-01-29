@@ -26,26 +26,21 @@ window.onload = function() {
 }
 
 function populateHtml(sortedArtists) {
-    debugger
+    // clone template
     sortedArtists.forEach(
         (obj, index) => {
             if (index === 0) {
                 // populate first template
-                document.getElementsByTagName('img')[0].src = obj.imgUrl
-                document.getElementsByClassName('show-title')[0].textContent = `"` + obj.title + `"`
-                document.getElementsByClassName('show-artist')[0].textContent = obj.artist
-                document.getElementsByClassName('show-rating')[0].textContent = obj.rating
+                document.getElementsByClassName('artist-name')[0].textContent = '#' + `${index + 1} ` + obj.name
+                document.getElementsByClassName('listeners')[0].textContent = obj.listeners + ` listeners`
             } else {
-                // clone first card
+                let cards = document.getElementById('cards')
                 let cardTemplate = document.getElementsByClassName('card')[0].cloneNode(true)
-                let cards = document.getElementsByClassName('cards')
-                // add template
-                cards[cards.length - 1].appendChild(cardTemplate)
-                // populate information
-                document.getElementsByTagName('img')[index].src = obj.imgUrl
-                document.getElementsByClassName('show-title')[index].textContent = `"` + obj.title + `"`
-                document.getElementsByClassName('show-artist')[index].textContent = obj.artist
-                document.getElementsByClassName('show-rating')[index].textContent = obj.rating
+
+                cards.appendChild(cardTemplate)
+
+                document.getElementsByClassName('artist-name')[index].textContent = '#' + `${index + 1} ` + obj.name
+                document.getElementsByClassName('listeners')[index].textContent = obj.listeners + ` listeners`
             }
         }
     )
